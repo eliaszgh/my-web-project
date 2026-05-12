@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Initiative | Clean Water for All</title>
+    <title>EverLastinEarth</title>
     <style>
-        /* This is the CSS - it makes the site look like Water.org */
+        /* Updated styles */
         body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; }
         
-        /* Navigation Bar */
-        nav { background: #fff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+        /* Navigation Bar with Logo */
+        nav { background: #fff; padding: 10px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+        .logo-container { display: flex; align-items: center; text-decoration: none; }
+        .logo-image { height: 50px; width: auto; margin-right: 15px; }
+        .site-title { font-size: 28px; font-weight: bold; color: #0071bc; }
+        
         nav a { margin-left: 20px; text-decoration: none; color: #0071bc; font-weight: bold; }
 
-        /* Hero Section (The big blue top part) */
+        /* Hero Section */
         .hero { 
             background: linear-gradient(rgba(0,113,188,0.7), rgba(0,113,188,0.7)), 
                         url('https://images.unsplash.com/photo-1518081461904-9d8f136351c2?auto=format&fit=crop&w=1500&q=80');
@@ -33,46 +37,76 @@
         .btn { background: #ffbc0d; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; display: inline-block; }
         .btn:hover { background: #e5a90b; }
 
-        /* Content Section */
-        .content { padding: 50px; text-align: center; }
-        .grid { display: flex; justify-content: space-around; padding: 20px; }
+        /* General Content Sections */
+        .content-section { padding: 60px 50px; text-align: center; border-bottom: 1px solid #eee; }
+        .content-section h2 { font-size: 2.5rem; margin-bottom: 20px; color: #0071bc; }
+        .content-section p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+
+        /* Grid */
+        .grid { display: flex; justify-content: space-around; padding: 20px; max-width: 1000px; margin: 0 auto; }
         .grid-item { flex: 1; padding: 20px; }
+
+        /* Footer */
+        footer { background: #333; color: #fff; padding: 30px 50px; text-align: center; }
     </style>
 </head>
 <body>
 
     <nav>
-        <div style="font-size: 24px; font-weight: bold; color: #0071bc;">WATER PROJECT</div>
+        <!-- Logo and Site Title -->
+        <a href="#" class="logo-container">
+            <img src="everlastin_earth_hires.jpg" alt="EverLastinEarth Logo" class="logo-image">
+            <span class="site-title">EverLastinEarth</span>
+        </a>
         <div>
-            <a href="#">Our Impact</a>
-            <a href="#">Solutions</a>
-            <a href="#">About Us</a>
+            <a href="#about">About Us</a>
+            <a href="#impact">Our Impact</a>
+            <a href="#contact">Contact Us</a>
         </div>
     </nav>
 
     <section class="hero">
-        <h1>Safe water protects and saves lives.</h1>
-        <p>Access to safe water and sanitation empowers families to stay healthy and pursue a brighter future.</p>
-        <a href="#" class="btn">DONATE NOW</a>
+        <h1>Ensuring an EverLasting Future for our Planet.</h1>
+        <p>Join us in our mission to protect and preserve Earth's precious ecosystems and build a sustainable tomorrow.</p>
+        <a href="#" class="btn">GET INVOLVED</a>
     </section>
 
-    <section class="content">
+    <!-- NEW SECTION: About Us -->
+    <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>EverLastinEarth is dedicated to environmental conservation and sustainable practices. Founded by a group of passionate environmentalists, we strive to make a difference by protecting biodiversity, promoting renewable energy, and educating communities globally. We believe that by working together, we can ensure a healthy planet for future generations.</p>
+    </section>
+
+    <section id="impact" class="content-section">
         <h2>Our Global Impact</h2>
         <div class="grid">
             <div class="grid-item">
-                <h3>88 Million</h3>
-                <p>People empowered with safe water or sanitation.</p>
+                <h3>50,000+ Acres</h3>
+                <p>Of critical wildlife habitat protected globally.</p>
             </div>
             <div class="grid-item">
-                <h3>4 Continents</h3>
-                <p>Where we work to change lives every day.</p>
+                <h3>20 Active Projects</h3>
+                <p>Focused on reforestation and ocean cleanup across 5 continents.</p>
             </div>
             <div class="grid-item">
-                <h3>$7.7 Billion</h3>
-                <p>Mobilized in capital to support small loans.</p>
+                <h3>10,000 Volunteers</h3>
+                <p>Engaged in local community environmental initiatives.</p>
             </div>
         </div>
     </section>
+
+    <!-- NEW SECTION: Contact Us -->
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>Have questions about our mission, or want to explore partnership opportunities? We'd love to hear from you.</p>
+        <p><strong>Email:</strong> contact@everlastinearth.example.com</p>
+        <p><strong>Phone:</strong> +1 (555) EARTH-22</p>
+        <p><strong>Address:</strong> 123 Eco Way, Sustainability City, EE 12345</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 EverLastinEarth. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
